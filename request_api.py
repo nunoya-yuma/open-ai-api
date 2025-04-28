@@ -1,4 +1,8 @@
 from openai import OpenAI
+import dotenv
+
+dotenv.load_dotenv()
+
 client = OpenAI()
 
 response = client.responses.create(
